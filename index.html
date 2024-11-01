@@ -7,18 +7,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>💖💖💖 AluraGeek</h1>
-    </header>
-
+    <header class="cabecera">
+        <h1 class="elegantshadow">Hecon</h1>
+     </header>
+ 
     <main>
+
         <section class="product-list">
             <h2>MIS PRODUCTOS:</h2>
             <div id="products-container" class="products-container">
+                <!-- Productos fijos -->
+                <div class="product-card fixed-product">
+                    <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/u1zdvupiwoyyilv7pohm/M+NSW+TEE+JUST+DO+IT+SWOOSH.png" alt="Producto Fijo">
+                    <div class="product-info">Playera Nike</div>
+                    <div class="product-price">
+                        <p>$450.00</p>
+                        <button class="buy-btn">🛒</button>
+                    </div>
+                </div>
+                    <div class="product-card fixed-product">
+                        <img src="https://www.optimized-rlmedia.io/is/image/PoloGSI/s7-1481354_alternate10?$rl_4x5_pdp$" alt="Producto Fijo">
+                        <div class="product-info">Playera Polo Ralph Lauren</div>
+                        <div class="product-price">
+                            <p>$450.00</p>
+                            <button class="buy-btn">🛒</button>
+                        </div>
+                    </div>
+                <div class="product-card fixed-product">
+                    <img src="https://tommymx.vtexassets.com/arquivos/ids/643566/Tommy-Hilfiger-DM0DM18547BDS-1.jpg?v=638536439317600000" alt="Producto Fijo">
+                    <div class="product-info">Playera Tommy Hilfiger</div>
+                    <div class="product-price">
+                        <p>$611.00</p>
+                        <button class="buy-btn">🛒</button>
+                    </div>
+                </div>
+                <div class="product-card fixed-product">
+                    <img src="https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/9d732616-3cf0-4ab1-87a2-1a7f91e98cc4/W+J+SPT+DIAMOND+SS+TOP.png" alt="Producto Fijo">
+                    <div class="product-info">Playera Jordan</div>
+                    <div class="product-price">
+                        <p>$490.00</p>
+                        <button class="buy-btn">🛒</button>
+                    </div>
+                </div>
+                <div class="product-card fixed-product">
+                    <img src="https://s3-us-west-1.amazonaws.com/calzzapato/zoom/09GRU3-1.jpg" alt="Producto Fijo">
+                    <div class="product-info">Playera Puma</div>
+                    <div class="product-price">
+                        <p>$449.00</p>
+                        <button class="buy-btn">🛒</button>
+                    </div>
+                </div>
+                <div class="product-card fixed-product">
+                    <img src="https://s7d2.scene7.com/is/image/aeo/1182_5522_100_of" alt="Producto Fijo">
+                    <div class="product-info">Playera American Eagle</div>
+                    <div class="product-price">
+                        <p>$319.00</p>
+                        <button class="buy-btn">🛒</button>
+                    </div>
+                </div>
+                
                 <!-- Aquí se agregarán los productos dinámicamente -->
             </div>
+        
         </section>
-
         <section class="add-product-form">
             <h2>AGREGAR PRODUCTO:</h2>
             <form id="productForm">
@@ -26,8 +77,8 @@
                 <input type="number" id="productPrice" placeholder="Precio..." required>
                 <input type="url" id="productImage" placeholder="Imagen (URL)..." required>
                 <div class="button-container">
-                    <button class="enviar">Enviar</button>
-                    <button class="limpiar">Limpiar</button>
+                    <button type="submit" class="enviar">Enviar</button>
+                    <button type="reset" class="limpiar">Limpiar</button>
                 </div>
             </form>
         </section>
@@ -41,9 +92,3 @@
     <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
-
-
-
