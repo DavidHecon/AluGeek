@@ -12,6 +12,7 @@ document.getElementById("productForm").addEventListener("submit", function (even
 function addProduct(name, price, imageUrl) {
     const productContainer = document.getElementById("products-container");
 
+    // Crear un nuevo producto dinámico
     const productCard = document.createElement("div");
     productCard.className = "product-card";
 
@@ -43,6 +44,7 @@ function addProduct(name, price, imageUrl) {
     productCard.appendChild(productInfo);
     productCard.appendChild(productPrice);
 
+    // Agregar el nuevo producto después del producto fijo
     productContainer.appendChild(productCard);
 }
 
